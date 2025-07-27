@@ -1,11 +1,6 @@
 /* File: src/Styles/Login.css */
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-  font-family: 'Segoe UI', 'Poppins', sans-serif;
-}
+
 
 .login-container {
   max-width: 400px;

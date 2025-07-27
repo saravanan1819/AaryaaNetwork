@@ -1,0 +1,296 @@
+.testimonial-section .testimonial-wrapper {
+  width: 100%;
+}
+.testimonial-section .testimonial-swiper {
+  padding: 0px 40px;
+  overflow: visible;
+  transform-style: preserve-3d;
+  position: relative;
+
+}
+.testimonial-section .swiper-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-section .swiper-slide-active .testimonial-card {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+  z-index: 2;
+  filter: blur(0px);
+  
+}
+
+.testimonial-section .swiper-slide-prev .testimonial-card {
+  transform: scale(1) rotate(-10deg);
+  opacity: 0.8;
+  z-index: 1;
+  filter: blur(1px);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.testimonial-section .swiper-slide-next .testimonial-card {
+  transform: scale(1) rotate(10deg);
+  opacity: 0.8;
+  z-index: 1;
+  margin-top: 50px;
+  filter: blur(1px);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+}
+
+.testimonial-section .testimonial-card
+{
+  background-color: #F5F5F5;
+  padding: 10px;
+  border: 1px solid #949494;
+  border-radius: 30px;
+  padding: 25px 30px;
+  padding-bottom: 40px;
+  width: 450px;
+  height: 550px;
+  min-height: 500px;
+  max-height: 600px;
+  position: relative;
+}
+.testimonial-section .testimonial-header img {
+    width: 32px;
+    margin-top: 5px;
+}
+.testimonial-card .profile
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.testimonial-card .profile-img
+{ 
+  width: 55px;
+  height: 55px;
+   background-color: #ffffff;
+  border: 1px solid #949494;
+  border-radius: 50%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-card .profile-img img
+{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial-card .profile h3
+{
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: .5px;
+}
+
+.testimonial-card .testimonial-rating
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top:25px;
+    margin-left: 2px;
+}
+.testimonial-card .testimonial-rating .star-icon
+{
+  font-size: 25px;
+  color: #651E1E;  
+}
+.star-icon .start-icon-fill,.star-icon .start-icon-empty
+{
+  font-size: 30px;
+  color: #651E1E;  
+  margin-right: 10px;
+}
+.testimonial-card .testimonial-rating .rating-count
+{
+  font-size: 20px;
+  color: #212121;
+}
+.testimonial-rating .rating-count span
+{
+  color: #A3A3A3;
+}
+
+.testimonial-divider-div
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.1;
+}
+.testimonial-divider {
+  width:80%;
+  border: none;
+  border-top: 2px solid #651e1e7e;
+  margin-top: 15px;
+  border-radius: 50px;
+}
+.testimonial-card .feedback-div
+{
+   margin-top: 15px;
+   font-size: 18px;
+   line-height: 30px;
+   color: #212121;
+   padding-bottom: 30px;
+}
+.testimonial-card  .testimonial-counter
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #651E1E;
+    color: white;
+    font-size: 12px;
+    padding: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+.testimonial-card  .testimonial-counter span
+{
+   color: #cbcbcb;
+}
+.testimonial-card .arayaa-logo-bottom
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: -10px;
+}
+.testimonial-card .arayaa-logo-bottom .logo-bottom
+{
+   display: flex;
+   align-items: center;
+   font-size: 8px;
+   color: #651E1E;
+   position: absolute;
+   font-weight: 500;
+   bottom: 10px;
+    opacity: 0.8;
+
+}
+ .arayaa-logo-bottom img
+{
+  width: 60px;
+}
+.testimonial-controls {
+  margin-top: 20px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  /* position: relative; */
+}
+
+.custom-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.custom-prev,
+.custom-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.custom-next {
+  background-color: #641c1c;
+  color: white;
+  border: none;
+  position: absolute;
+  top: -50px;
+  right: 7.5rem;
+}
+
+.custom-prev {
+  position: absolute;
+  top: -50px;
+  left: 7.5rem;
+}
+
+.testimonial-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  background-color: #641c1c;
+  width: 25px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+
+@media (max-width:798px)
+{
+      .testimonial-section .swiper-slide-prev .testimonial-card {
+      transform: scale(1) rotate(-5deg);
+      margin-top: 30px;
+    }
+
+    .testimonial-section .swiper-slide-next .testimonial-card {
+      transform: scale(1) rotate(5deg);
+      margin-top: 30px;
+    }
+    .custom-prev {
+      position: absolute;
+      top: -50px;
+      left: 3.5rem;
+    }
+    .custom-next {
+      top: -50px;
+      right: 3.5rem;
+    }
+    .testimonial-section .testimonial-swiper {
+     padding-top: 20px;
+    }
+
+   
+
+}

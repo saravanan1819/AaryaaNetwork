@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import consultation from "../../assets/con.gif";
+import consultation from "../../assets/consultation.gif";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { MdCall } from "react-icons/md";
